@@ -28,7 +28,7 @@ WORKDIR /
 
 
 # Cloning required repositories
-RUN git clone https://github.com/frankjinn/verilator_llm_fuzzer 
+RUN git clone https://github.com/frankjinn/verilator_LLM_Fuzzer.git
 RUN git clone https://github.com/mrash/afl-cov.git
 
 WORKDIR /afl-cov
@@ -36,7 +36,7 @@ RUN cp afl-cov /usr/local/bin/
 
 # Rename the directory
 WORKDIR /
-RUN mv verilator_llm_fuzzer verilator
+RUN mv verilator_LLM_Fuzzer verilator
 
 # Set the working directory to the renamed folder
 WORKDIR /verilator/nodist/fuzzer
