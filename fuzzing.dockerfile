@@ -42,10 +42,6 @@ RUN mv verilator_LLM_Fuzzer verilator
 WORKDIR /verilator/nodist/fuzzer
 RUN git pull
 
-ENV CFLAGS=" -fprofile-arcs -ftest-coverage"
-ENV CXXFLAGS=" -fprofile-arcs -ftest-coverage"
-ENV LFLAGS="--coverage"
-
 RUN unset VERILATOR_ROOT
 RUN chmod +x ./
 RUN ./all.sh
