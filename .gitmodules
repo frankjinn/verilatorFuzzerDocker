@@ -1,0 +1,3 @@
+[submodule "verilator_LLM_Fuzzer"]
+	path = verilator_LLM_Fuzzer
+	url = https://github.com/frankjinn/verilator_LLM_Fuzzer.git
