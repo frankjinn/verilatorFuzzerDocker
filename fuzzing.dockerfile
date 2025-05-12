@@ -30,6 +30,7 @@ WORKDIR /
 # Cloning required repositories
 RUN git clone https://github.com/frankjinn/verilator_LLM_Fuzzer.git
 RUN git clone https://github.com/mrash/afl-cov.git
+RUN apt-get install -y tmux
 
 WORKDIR /afl-cov
 RUN cp afl-cov /usr/local/bin/
